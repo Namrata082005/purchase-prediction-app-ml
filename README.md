@@ -1,6 +1,6 @@
 # 🧾 Purchase Prediction – ML Deployment with Flask
 
-_Predicting whether a customer will make a purchase based on age and estimated salary using a pre-trained ML model deployed as a web app.\_
+_Predicting whether a customer will make a purchase based on age and estimated salary using a pre-trained ML model deployed as a web app._
 
 ---
 
