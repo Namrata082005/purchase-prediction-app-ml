@@ -1,34 +1,34 @@
-\# 🧾 Purchase Prediction – ML Deployment with Flask
+# 🧾 Purchase Prediction – ML Deployment with Flask
 
-\_Predicting whether a customer will make a purchase based on age and estimated salary using a pre-trained ML model deployed as a web app.\_
+_Predicting whether a customer will make a purchase based on age and estimated salary using a pre-trained ML model deployed as a web app.\_
 
 ---
 
-\## 📌 Table of Contents
+## 📌 Table of Contents
 
-\- <a href="#overview">Overview</a>
+- <a href="#overview">Overview</a>
 
-\- <a href="#business-problem">Project Goal</a>
+- <a href="#business-problem">Project Goal</a>
 
-\- <a href="#dataset">Dataset</a>
+- <a href="#dataset">Dataset</a>
 
-\- <a href="#tools--technologies">Tools \& Technologies</a>
+- <a href="#tools--technologies">Tools \& Technologies</a>
 
-\- <a href="#project-structure">Project Structure</a>
+- <a href="#project-structure">Project Structure</a>
 
-\- <a href="#data-cleaning--preparation">Data Preparation</a>
+- <a href="#data-cleaning--preparation">Data Preparation</a>
 
-\- <a href="#exploratory-data-analysis-eda">Model Training \& Analysis</a>
+- <a href="#exploratory-data-analysis-eda">Model Training \& Analysis</a>
 
-\- <a href="#research-questions--key-findings">Key Features \& Insights</a>
+- <a href="#research-questions--key-findings">Key Features \& Insights</a>
 
-\- <a href="#dashboard">Web Interface</a>
+- <a href="#dashboard">Web Interface</a>
 
-\- <a href="#how-to-run-this-project">How to Run This Project</a>
+- <a href="#how-to-run-this-project">How to Run This Project</a>
 
-\- <a href="#final-recommendations">Future Improvements</a>
+- <a href="#final-recommendations">Future Improvements</a>
 
-\- <a href="#author--contact">Author \& Contact</a>
+- <a href="#author--contact">Author \& Contact</a>
 
 ---
 
@@ -42,35 +42,35 @@ This project is a simple web application that predicts whether a customer will m
 
 Predicting customer purchase behavior helps businesses target marketing efforts effectively. This project aims to:
 
-\- Deploy a basic ML model as an interactive web app
+- Deploy a basic ML model as an interactive web app
 
-\- Handle user inputs and provide real-time predictions with probabilities
+- Handle user inputs and provide real-time predictions with probabilities
 
-\- Demonstrate end-to-end ML workflow from model loading to user interface
+- Demonstrate end-to-end ML workflow from model loading to user interface
 
-\- Focus on simplicity for educational purposes as a second ML project
+- Focus on simplicity for educational purposes as a second ML project
 
 ---
 
 <h2><a class="anchor" id="dataset"></a>Dataset</h2>
 
-\- Assumed training data: CSV or similar with columns like `Age`, `EstimatedSalary`, and target `Purchased` (binary)
+- Assumed training data: CSV or similar with columns like `Age`, `EstimatedSalary`, and target `Purchased` (binary)
 
-\- Pre-trained model and scaler saved as pickle files (`purchase\_knn.pkl` and `scaler.pkl`)
+- Pre-trained model and scaler saved as pickle files (`purchase\_knn.pkl` and `scaler.pkl`)
 
-\- No raw data included; model assumes classification on historical customer data (e.g., Social Network Ads dataset)
+- No raw data included; model assumes classification on historical customer data (e.g., Social Network Ads dataset)
 
 ---
 
 <h2><a class="anchor" id="tools--technologies"></a>Tools \& Technologies</h2>
 
-\- Python (Flask for web framework, Scikit-learn for ML model)
+- Python (Flask for web framework, Scikit-learn for ML model)
 
-\- HTML/CSS (with Bootstrap 5 for styling)
+- HTML/CSS (with Bootstrap 5 for styling)
 
-\- Pickle (for model serialization)
+- Pickle (for model serialization)
 
-\- GitHub
+- GitHub
 
 ---
 
@@ -100,11 +100,11 @@ purchase-prediction/
 
 <h2><a class="anchor" id="data-cleaning--preparation"></a>Data Preparation</h2>
 
-\- User inputs: Age (float), Estimated Salary (float)
+- User inputs: Age (float), Estimated Salary (float)
 
-\- Scaling inputs using loaded scaler to match training data
+- Scaling inputs using loaded scaler to match training data
 
-\- Prediction uses scaled features for KNN classification
+- Prediction uses scaled features for KNN classification
 
 ---
 
@@ -112,11 +112,11 @@ purchase-prediction/
 
 \*\*Assumptions from Training:\*\*
 
-\- Model: K-Nearest Neighbors (KNN) classifier from Scikit-learn
+- Model: K-Nearest Neighbors (KNN) classifier from Scikit-learn
 
-\- Features: Age, Estimated Salary
+- Features: Age, Estimated Salary
 
-\- No explicit EDA in this deployment; assume prior analysis showed:
+- No explicit EDA in this deployment; assume prior analysis showed:
 
 &nbsp; - Positive correlation between salary/age and purchase likelihood
 
@@ -124,9 +124,9 @@ purchase-prediction/
 
 \*\*Potential Issues:\*\*
 
-\- No input validation (e.g., negative age/salary)
+- No input validation (e.g., negative age/salary)
 
-\- Probabilities derived from KNN's predict\_proba
+- Probabilities derived from KNN's predict\_proba
 
 ---
 
