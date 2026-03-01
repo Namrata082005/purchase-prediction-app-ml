@@ -110,7 +110,7 @@ purchase-prediction/
 
 <h2><a class="anchor" id="exploratory-data-analysis-eda"></a>Model Training \& Analysis</h2>
 
-\*\*Assumptions from Training:\*\*
+**Assumptions from Training:**
 
 - Model: K-Nearest Neighbors (KNN) classifier from Scikit-learn
 
@@ -122,7 +122,7 @@ purchase-prediction/
 
 &nbsp; - Decision boundaries based on clusters in feature space
 
-\*\*Potential Issues:\*\*
+**Potential Issues:**
 
 - No input validation (e.g., negative age/salary)
 
@@ -132,15 +132,15 @@ purchase-prediction/
 
 <h2><a class="anchor" id="research-questions--key-findings"></a>Key Features \& Insights</h2>
 
-1\. \*\*Input Features\*\*: Age and Estimated Salary for binary classification
+1\. **Input Features**: Age and Estimated Salary for binary classification
 
-2\. \*\*Prediction Logic\*\*: Real-time scaling, inference, and probability calculation
+2\. **Prediction Logic**: Real-time scaling, inference, and probability calculation
 
-3\. \*\*User Experience\*\*: Simple form with prediction text and progress bars for probabilities
+3\. **User Experience**: Simple form with prediction text and progress bars for probabilities
 
-4\. \*\*Insights\*\*: Higher salary and certain age groups increase purchase probability
+4\. **Insights**: Higher salary and certain age groups increase purchase probability
 
-5\. \*\*Limitations\*\*: Binary output; no multi-class or advanced features
+5\. **Limitations**: Binary output; no multi-class or advanced features
 
 ---
 
