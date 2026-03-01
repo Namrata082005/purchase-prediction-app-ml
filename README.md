@@ -12,15 +12,15 @@ _Predicting whether a customer will make a purchase based on age and estimated s
 
 - <a href="#dataset">Dataset</a>
 
-- <a href="#tools--technologies">Tools \& Technologies</a>
+- <a href="#tools--technologies">Tools & Technologies</a>
 
 - <a href="#project-structure">Project Structure</a>
 
 - <a href="#data-cleaning--preparation">Data Preparation</a>
 
-- <a href="#exploratory-data-analysis-eda">Model Training \& Analysis</a>
+- <a href="#exploratory-data-analysis-eda">Model Training & Analysis</a>
 
-- <a href="#research-questions--key-findings">Key Features \& Insights</a>
+- <a href="#research-questions--key-findings">Key Features & Insights</a>
 
 - <a href="#dashboard">Web Interface</a>
 
@@ -28,7 +28,7 @@ _Predicting whether a customer will make a purchase based on age and estimated s
 
 - <a href="#final-recommendations">Future Improvements</a>
 
-- <a href="#author--contact">Author \& Contact</a>
+- <a href="#author--contact">Author & Contact</a>
 
 ---
 
@@ -56,13 +56,13 @@ Predicting customer purchase behavior helps businesses target marketing efforts 
 
 - Assumed training data: CSV or similar with columns like `Age`, `EstimatedSalary`, and target `Purchased` (binary)
 
-- Pre-trained model and scaler saved as pickle files (`purchase\_knn.pkl` and `scaler.pkl`)
+- Pre-trained model and scaler saved as pickle files (`purchase_knn.pkl` and `scaler.pkl`)
 
 - No raw data included; model assumes classification on historical customer data (e.g., Social Network Ads dataset)
 
 ---
 
-<h2><a class="anchor" id="tools--technologies"></a>Tools \& Technologies</h2>
+<h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
 
 - Python (Flask for web framework, Scikit-learn for ML model)
 
@@ -86,7 +86,7 @@ purchase-prediction/
 
 ├── app.py # Main Flask application script
 
-├── purchase\_knn.pkl # Pre-trained ML model
+├── purchase_knn.pkl # Pre-trained ML model
 
 ├── scaler.pkl # Feature scaler
 
@@ -108,7 +108,7 @@ purchase-prediction/
 
 ---
 
-<h2><a class="anchor" id="exploratory-data-analysis-eda"></a>Model Training \& Analysis</h2>
+<h2><a class="anchor" id="exploratory-data-analysis-eda"></a>Model Training & Analysis</h2>
 
 **Assumptions from Training:**
 
@@ -126,11 +126,11 @@ purchase-prediction/
 
 - No input validation (e.g., negative age/salary)
 
-- Probabilities derived from KNN's predict\_proba
+- Probabilities derived from KNN's predict_proba
 
 ---
 
-<h2><a class="anchor" id="research-questions--key-findings"></a>Key Features \& Insights</h2>
+<h2><a class="anchor" id="research-questions--key-findings"></a>Key Features & Insights</h2>
 
 1\. **Input Features**: Age and Estimated Salary for binary classification
 
@@ -194,7 +194,7 @@ Enter details and predict!
 
 ---
 
-<h2><a class="anchor" id="author--contact"></a>Author \& Contact</h2>
+<h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>
 
 Name: Namrata Pokharkar
 
